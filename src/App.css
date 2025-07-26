@@ -326,6 +326,7 @@ nav .bottom-nav ul li .category-btn.active-cat{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     border: 0;
+    color: black;
 }
 .search .search-box .search-bar textarea::-webkit-resizer {
     display: none;

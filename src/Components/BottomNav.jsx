@@ -9,7 +9,6 @@ const BottomNav = () => {
     <>
     <div className='bottom-nav'>
         <ul>
-            <li><button className={`category-btn ${category === '' ? 'active-cat' : ''}`} onClick={() => handleChangeCategory('')}>All</button></li>
             <li><button className={`category-btn ${category === 'politics' ? 'active-cat' : ''}`} onClick={() => handleChangeCategory('politics')}>Politics</button></li>
             <li><button className={`category-btn ${category === 'business' ? 'active-cat' : ''}`} onClick={() => handleChangeCategory('business')}>Business</button></li>
             <li><button className={`category-btn ${category === 'sport' ? 'active-cat' : ''}`} onClick={() => handleChangeCategory('sport')}>Sport</button></li>

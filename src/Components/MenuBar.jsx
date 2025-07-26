@@ -62,7 +62,7 @@ const MenuBar = () => {
           <div className='search-display'>
           <div className="search-bar">
             <textarea type="text" placeholder='Send a message..' onChange={(e)=> setInput(e.target.value)} value={input} />
-            <button><IoSend style={{scale: '2'}} onClick={()=> onSent()}/></button>
+            <button><IoSend style={{scale: '2', color: 'black'}} onClick={()=> onSent()}/></button>
           </div>
           <div className="search-result">
             {showResult ? (
