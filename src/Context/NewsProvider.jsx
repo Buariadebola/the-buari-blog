@@ -8,13 +8,12 @@ const NewsProvider = ({children}) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [category, setCategory] = useState('politics');
-  const apiKey = 'fb74b71e4f974376a304f5f847332c06';
   
   useEffect(() => {
     const fetchNews = async () => {
       setLoading(true);
       try{
-        const response = await fetch(`https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${apiKey}`);
+        const response = await fetch(`http://localhost:5000/api/news?category=${category}`);
         const data = await response.json();
         setNews(Array.isArray(data.articles) ? data.articles : []);
       } catch (error) {
