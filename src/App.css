@@ -232,6 +232,11 @@ nav .bottom-nav ul li .category-btn.active-cat{
     list-style: none;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+.menubar .menu-options li:hover{
+    transform: scale(1.2);
+    color: blue;
 }
 .menubar .menu-options li a{
     color: var(--text-color);
@@ -312,12 +317,12 @@ nav .bottom-nav ul li .category-btn.active-cat{
     bottom: 30px;
     right: 10px;
     width: 97%;
-    height: auto;
-    max-height: 60px;
+    max-height: 100px;
     background-color: white;  
 }
 .search .search-box .search-bar textarea{
     width: 95%;
+    height: auto;
     min-height: 20px;
     scrollbar-width: none;
     resize: vertical;

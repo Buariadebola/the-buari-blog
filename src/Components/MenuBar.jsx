@@ -56,7 +56,7 @@ const MenuBar = () => {
             <Link to="/about"><span>About</span><HiInformationCircle style={{marginLeft: '10px', padding: '0', scale: '1.2'}}/></Link>
           </li>
       )}
-      <li>
+      <div>
         <div className="search">
         <div className={`search-box ${showSearch ? 'active' : ''}`}>
           <div className='search-display'>
@@ -89,7 +89,7 @@ const MenuBar = () => {
         </div>
           <button className='search-icon' onClick={handleSearchBox}><img src={AIicon} alt="" /></button>
           </div>
-      </li>
+      </div>
         {increaseMenubar ? (
             <button className={`theme-button ${theme}`} onClick={themeToggle} onMouseDown={handleColor}>
         { clicked ? (
